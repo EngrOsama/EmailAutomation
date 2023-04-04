@@ -9,7 +9,7 @@ Instructions:
 
 3- Ensure that the 'email_list.xlsx' and 'your_file.pdf' files exist in the same directory as the Python program.
 
-4- The program sends one email at a time with a 2-second delay in between. This may not be suitable if you need to send a large number of emails and can be changed to 0.
+4- The program can send one email at a time with a delay in between. This may not be suitable if you need to send a large number of emails and can be changed to 0.
 
 5- Check the spam folder in the recipient's email account in case the email ends up there.
 
