@@ -20,7 +20,7 @@ smtp_password = 'your_email_password'
 sender_email = smtp_username
 
 # loop through list of emails and send message with attachment
-for email_cell in emails:
+for counter, email_cell in enumerate(emails):
     email = email_cell.value
 
     # create message container
@@ -60,7 +60,7 @@ for email_cell in emails:
 
         # save the file
         wb.save('email_list.xlsx')
-        print(f"Email sent to {email}")
+        print(f"{counter+1}. Email sent to {email}")
 
     except smtplib.SMTPRecipientsRefused:
         print(f"Invalid email address: {email}")
